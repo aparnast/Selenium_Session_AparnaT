@@ -27,6 +27,11 @@ public class CommonUtils {
             
         }
     }
+    
+    public void closeBrowser()
+    {
+    	driver.close();
+    }
 
 
 }
