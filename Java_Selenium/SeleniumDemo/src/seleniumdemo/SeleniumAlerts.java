@@ -11,7 +11,7 @@ public class SeleniumAlerts {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		/*
-		*
+		* check alerts 
 		*/
 
 		// CommonUtils cu=new CommonUtils();

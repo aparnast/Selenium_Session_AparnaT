@@ -17,10 +17,7 @@ public class CommonUtils {
 
     public void navigateToURL(String URL) 
     {
-        System.out.println("Navigating to: " + URL);
-        
-
-        try {
+                try {
             driver.navigate().to(URL);
         } catch (Exception e) {
             System.out.println("URL did not load: " + URL);
@@ -30,8 +27,15 @@ public class CommonUtils {
     
     public void closeBrowser()
     {
+    	try
+    	{
     	driver.close();
-    }
+    	}
+    	catch(Exception e )
+    	{
+    		System.out.println("window not closed ");
+    	}
+    	}
 
 
 }
