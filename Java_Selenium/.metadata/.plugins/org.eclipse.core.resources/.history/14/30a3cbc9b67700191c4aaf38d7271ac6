@@ -1,0 +1,63 @@
+package seleniumdemo;
+
+
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumPractice {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver","D:\\Session_Selenium\\All jars\\chromedriver_win32\\chromedriver.exe");
+	    //create instance of webdriver	
+		WebDriver driver = new ChromeDriver();
+		//maximize the window
+		driver.manage().window().maximize();
+		//apply wait till load the web page
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		//enter url
+		driver.get("https://www.toolsqa.com/automation-practice-form/");
+		//get the title and store it in string
+		String title= driver.getTitle();
+		//print the title on console
+		System.out.println("tile of the open url is :"+ title);
+		//click on partial link text
+		driver.findElement(By.partialLinkText("Partial Link Test")).click();
+		//go back to main web page
+		driver.navigate().back();
+		//click on link text
+		driver.findElement(By.partialLinkText("Link Test")).click();
+		//go back to main page
+		driver.navigate().back();
+		//apply time 
+		Thread.sleep(1000);
+        //enter value in first name 
+		driver.findElement(By.cssSelector("[name='firstname'")).sendKeys("demoname");
+		//apply time 
+		Thread.sleep(1000);
+		//enter value in last name 
+	    driver.findElement(By.cssSelector("[name='lastname'")).sendKeys("demo last name");
+	    //apply time 
+	  	Thread.sleep(1000);		
+		//select radio value from group radio 
+	  	List<WebElement> resultList = driver.findElements(By.cssSelector("[type='radio'"));
+	 
+	  	
+	  
+	  	
+		
+		
+		
+		
+		driver.close();
+		
+
+	}
+
+}
