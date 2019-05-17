@@ -16,8 +16,7 @@ public class Utility  {
     WebElement Password;
     WebElement loginbtn;
     
-    Systemutil sys= new Systemutil();
-    
+  
     public Utility() 
         {
     	 
@@ -26,7 +25,7 @@ public class Utility  {
   		driver.manage().window().maximize();
   		//apply wait till load the web page
   		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-  		 
+    	
         }
 
     public void navigateToURL(String URL) 
@@ -46,11 +45,9 @@ public class Utility  {
     			ele1.sendKeys("@deal1234");
     */
 
-    
+        Systemutil sys= new Systemutil();
     	Userid =sys.getElement("id","username");
-    			Userid.sendKeys("test12@a2omobile.com");
     	Password= sys.getElement("id", "password");
-    	        Password.sendKeys("@deal1234");
     	
     		
     }
@@ -58,7 +55,7 @@ public class Utility  {
     public void click()
     {
 
-      
+        Systemutil sys= new Systemutil();
     	//driver.findElement(By.id("loginButton")).click();
        loginbtn=sys.getElement("id","loginButton");
     }
