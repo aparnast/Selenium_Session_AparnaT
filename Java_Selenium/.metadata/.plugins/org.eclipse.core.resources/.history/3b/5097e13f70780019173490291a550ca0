@@ -1,0 +1,42 @@
+package Demo1;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Systemutil extends Utility {
+	
+
+	
+	String loc ;
+	WebElement ele ;
+/*	public Systemutil() 
+    {
+	  WebElement ele ;
+    }*/
+	 
+	public void findelements()
+	{
+	 
+		
+	
+		switch("loc")
+		{
+		  case1:  loc = "id";
+		           ele=driver.findElement(By.id(""));
+		           
+                   break; 
+		  case2:  loc = "name";
+                   ele=driver.findElement(By.id(""));
+                   break; 
+		  default: loc = "Invalid month";
+                   break;
+          
+          
+		
+		}
+	
+	}
+}

@@ -1,0 +1,12 @@
+package Demo1;
+
+public class Systemutil {
+	
+	
+	
+	public void findelements()
+	{
+		
+	}
+
+}

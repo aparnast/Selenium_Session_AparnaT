@@ -1,0 +1,14 @@
+package Demo1;
+
+import org.openqa.selenium.WebElement;
+
+public class Systemutil {
+	
+	WebElement ele ;
+	
+	public void findelements()
+	{
+		
+	}
+
+}
