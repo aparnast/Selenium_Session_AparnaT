@@ -16,9 +16,8 @@ public class Utility  {
     WebElement Password;
     WebElement loginbtn;
     
-    Systemutil sys= new Systemutil();
-    
-    public Utility() 
+   //Systemutil sys= new Systemutil();
+     public Utility() 
         {
     	 
     	  driver=new ChromeDriver();
@@ -26,53 +25,11 @@ public class Utility  {
   		driver.manage().window().maximize();
   		//apply wait till load the web page
   		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+  		
+  		
   		 
         }
-
-    public void navigateToURL(String URL) 
-    {
-                try {
-            driver.navigate().to(URL);
-        } catch (Exception e) {
-            System.out.println("URL did not load: " + URL);
-            
-        }
-    }
-    public void enterText()
-    {
-    /*	WebElement ele =driver.findElement(By.id("username"));
-    			ele.sendKeys("test12@a2omobile.com");
-    			WebElement ele1 =driver.findElement(By.id("password"));
-    			ele1.sendKeys("@deal1234");
-    */
-
     
-    	Userid =sys.getElement("id","username");
-    			Userid.sendKeys("test12@a2omobile.com");
-    	Password= sys.getElement("id", "password");
-    	        Password.sendKeys("@deal1234");
-    	
-    		
-    }
     
-    public void click()
-    {
-
-      
-    	//driver.findElement(By.id("loginButton")).click();
-       loginbtn=sys.getElement("id","loginButton");
-    }
-    
-    public void closeBrowser()
-    {
-    	try
-    	{
-    	driver.close();
-    	}
-    	catch(Exception e )
-    	{
-    		System.out.println("window not closed ");
-    	}
-    	}
   
 }
