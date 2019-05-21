@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.213261">
+<testcase classname="User login" name="User should login with valid  credentials" time="0.211387">
+<system-out><![CDATA[Given I open login page.....................................................passed
+When I enter user name as "traymans_u2@mailinator.com" and password "Traymans_u21-trs".passed
+And I submit login page.....................................................passed
+Then I redirect to the home page............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="User should login with valid  credentials 2" time="0.000689">
+<system-out><![CDATA[Given I open login page.....................................................passed
+When I enter user name as "traymans_u2@mailinator.com" and password "traymans_u21-trs".passed
+And I submit login page.....................................................passed
+Then I redirect to the home page............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User login" name="User should login with invalid  credentials" time="0.001185">
+<system-out><![CDATA[Given I am on login page....................................................passed
+When I enter invalid user name as "test" and password "test"................passed
+And I submit details of  login page.........................................passed
+Then I redirect to login page...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

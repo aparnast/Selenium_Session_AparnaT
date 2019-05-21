@@ -1,0 +1,290 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 130291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User should login with valid  credentials",
+        "description": "",
+        "id": "user-login;user-should-login-with-valid--credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 54455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 208123736,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open login page",
+            "match": {
+              "location": "StepDefination.i_open_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2796845,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter user name as \"traymans_u2@mailinator.com\" and password \"Traymans_u21-trs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "traymans_u2@mailinator.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Traymans_u21-trs",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefination.i_enter_user_name_as_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 195294,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I submit login page",
+            "match": {
+              "location": "StepDefination.i_submit_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86101,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I redirect to the home page",
+            "match": {
+              "location": "StepDefination.i_redirect_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 66999,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User should login with valid  credentials",
+        "description": "",
+        "id": "user-login;user-should-login-with-valid--credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 222664,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 85245,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open login page",
+            "match": {
+              "location": "StepDefination.i_open_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 204988,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter user name as \"traymans_u2@mailinator.com\" and password \"traymans_u21-trs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "traymans_u2@mailinator.com",
+                  "offset": 22
+                },
+                {
+                  "val": "traymans_u21-trs",
+                  "offset": 64
+                }
+              ],
+              "location": "StepDefination.i_enter_user_name_as_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53314,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I submit login page",
+            "match": {
+              "location": "StepDefination.i_submit_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55595,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I redirect to the home page",
+            "match": {
+              "location": "StepDefination.i_redirect_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 191018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.init()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User should login with invalid  credentials",
+        "description": "",
+        "id": "user-login;user-should-login-with-invalid--credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 178188,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102637,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on login page",
+            "match": {
+              "location": "StepDefination.i_am_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 311331,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter invalid user name as \"test\" and password \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 30
+                },
+                {
+                  "val": "test",
+                  "offset": 50
+                }
+              ],
+              "location": "StepDefination.i_enter_invalid_user_name_as_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208694,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I submit details of  login page",
+            "match": {
+              "location": "StepDefination.i_submit_details_of_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 193013,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I redirect to login page",
+            "match": {
+              "location": "StepDefination.i_redirect_to_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User login",
+    "description": "user should be login with valid credential",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "D:/Java_Workspace/CucumberTutorial/Login/LoginTest.feature"
+  }
+]
