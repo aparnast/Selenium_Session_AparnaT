@@ -5,6 +5,8 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\aparna.tahashildar\Desktop\CucumberTutorial"/>
+			<item value="D:\All_Workspace\JavaPrograms\CucumberTutorial"/>
 			<item value="D:\Session_Selenium\Projects\Java_Selenium\SeleniumDemo"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

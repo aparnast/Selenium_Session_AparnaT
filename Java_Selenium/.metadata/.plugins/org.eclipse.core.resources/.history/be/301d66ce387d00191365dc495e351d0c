@@ -1,0 +1,94 @@
+package a2odemo1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class CommonUtils {
+	
+	   //Define veriables 
+	   public WebDriver driver;
+       public WebDriverWait wait;
+       public Actions actions;
+
+       //Initialize web driver 
+       public CommonUtils()
+       {
+          driver=new ChromeDriver();
+       }
+       
+       //Open URl
+       public void navigateToURL(String URL)
+       {
+          System.out.println("Navigating to: " + URL);
+           try 
+             {
+               driver.navigate().to(URL);
+             } 
+           catch (Exception e)
+             {
+               System.out.println("URL did not load: " + URL);
+             }
+       }
+
+       //Get Page tile 
+       public void getPageTitle() 
+       {
+          try 
+          {
+            System.out.print(String.format("The title of the page is: %s\n\n", driver.getTitle()));
+          } 
+          catch (Exception e) 
+          {
+        	System.out.println("Error while getting title of the page:" );
+          }
+	   }
+       //Get element by locator
+      public WebElement getElement(By locator) 
+      {
+          try 
+          {
+            return driver.findElement(locator);
+          } 
+          catch (Exception e)
+          {
+            System.out.println(" element does not exist " + locator);
+          }
+        return null;
+      }
+
+
+
+
+    public void sendKeys(By selector, String value) {
+        WebElement element = getElement(selector);
+        clearField(element);
+        try {
+            element.sendKeys(value);
+        } catch (Exception e) {
+        	System.out.println("URL did not load: " );
+               }
+    }
+
+    public void clearField(WebElement element) {
+        try {
+            element.clear();
+        } catch (Exception e) {
+            System.out.print(String.format("The following element could not be cleared: [%s]", element.getText()));
+        }
+    }
+
+    public void click(By selector) {
+        WebElement element = getElement(selector);
+       // waitForElementToBeClickable(selector);
+        try {
+            element.click();
+        } catch (Exception e) {
+        	System.out.println("URL did not load: " );    
+        }
+    }
+
+}

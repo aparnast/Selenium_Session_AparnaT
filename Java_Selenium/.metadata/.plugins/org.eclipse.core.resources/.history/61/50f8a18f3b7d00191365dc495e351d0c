@@ -1,0 +1,14 @@
+package a2odemo1;
+
+public class LoginPage extends CommonUtils{
+	
+	//create object of Utility class
+	 //  CommonUtils commonutil = new CommonUtils();
+	   
+	   
+	   
+	   
+	   
+			 
+
+}

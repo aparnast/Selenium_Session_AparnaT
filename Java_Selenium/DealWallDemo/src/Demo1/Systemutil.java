@@ -1,11 +1,33 @@
 package Demo1;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import java.util.concurrent.TimeUnit;
 
-public class Systemutil extends Utility{
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Systemutil {
 	
-	//Utility utility = new Utility();
+	public WebDriver driver;
+    public WebDriverWait wait;
+    WebElement Userid;
+    WebElement Password;
+    WebElement loginbtn;
+    
+   
+     public Systemutil() 
+        {
+    	 
+    	  driver=new ChromeDriver();
+    	//maximize the window
+  		driver.manage().window().maximize();
+  		//apply wait till load the web page
+  		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+        }
+	
+
 
  public WebElement getElement(String locator ,String value)
  {

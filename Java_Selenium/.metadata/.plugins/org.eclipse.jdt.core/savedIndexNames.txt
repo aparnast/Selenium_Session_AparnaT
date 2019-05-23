@@ -1,12 +1,5 @@
 INDEX VERSION 1.127+D:\GitBashSelenium\Java_Selenium\.metadata\.plugins\org.eclipse.jdt.core
-280374800.index
-2378851897.index
-1657020514.index
-354067667.index
 2637914408.index
-1661763748.index
-4139974149.index
-3854920020.index
-204612706.index
-2277877443.index
 2114650753.index
+1106411921.index
+204612706.index
