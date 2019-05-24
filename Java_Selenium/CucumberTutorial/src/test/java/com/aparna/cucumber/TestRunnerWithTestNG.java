@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
-@CucumberOptions(features= "D:\\Java_Workspace\\CucumberTutorial\\Login\\LoginTest.feature",glue="com.aparna.cucumber",plugin={"html:target/test-report","junit:target/junit-xml-report.xml","json:target/json-report.json"})
+@CucumberOptions(features= "D:\\GitBashSelenium\\Java_Selenium\\CucumberTutorial\\Login\\LoginTest.feature",glue="com.aparna.cucumber",plugin={"html:target/test-report","junit:target/junit-xml-report.xml","json:target/json-report.json"})
 
 
 public class TestRunnerWithTestNG extends AbstractTestNGCucumberTests  {

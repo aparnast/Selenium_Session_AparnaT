@@ -9,8 +9,7 @@ Scenario Outline: User should login with valid  credentials
 	
 	Examples: 
 		|uname|pass|
-		|traymans_u2@mailinator.com|Traymans_u21-trs|
-		|traymans_u2@mailinator.com|traymans_u21-trs|
+		|test12@a2omobile.com|@deal1234|
 		
 Scenario: User should login with invalid  credentials 
 	Given I am on login page  

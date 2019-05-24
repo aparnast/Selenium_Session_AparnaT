@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MainClass  {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 	
 System.setProperty("webdriver.chrome.driver", "D:\\Session_Selenium\\All jars\\chromedriver_win32\\chromedriver.exe");
@@ -28,11 +28,11 @@ System.setProperty("webdriver.chrome.driver", "D:\\Session_Selenium\\All jars\\c
 		 sys.navigateToURL("https://qaaws.a2omobile.com/dealwall/Client/index.html");
 		 
 		 //enter values in login 
-	//	 sys.enterText();
+	sys.enterText();
 		 
 		 //click on login button 
-		// sys.click();
-		 
+		 sys.click();
+		 Thread.sleep(2000);
 		//use close browser method to close the current open window 
 		 sys.closeBrowser();
 		 

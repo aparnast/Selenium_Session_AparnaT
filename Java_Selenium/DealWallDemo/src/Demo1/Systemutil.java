@@ -53,7 +53,9 @@ public class Systemutil {
          
      }
  }
- public void enterText(WebElement ele , String text)
+ 
+ //public void enterText(WebElement ele , String text)
+ public void enterText()
  {
  //	WebElement ele =driver.findElement(By.id("username"));
  			
@@ -63,8 +65,8 @@ public class Systemutil {
  	        Password= getElement("id", "password");
  	        Password.sendKeys("@deal1234");
  }
- 
- public void click(WebElement ele)
+ //public void click(WebElement ele)
+ public void click()
  { 
  	driver.findElement(By.id("loginButton")).click();
  //   loginbtn=sys.getElement("id","loginButton");
