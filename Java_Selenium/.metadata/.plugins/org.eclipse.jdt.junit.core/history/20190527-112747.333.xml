@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="TestDemo" tests="6" started="6" failures="0" errors="0" ignored="2">
+  <testsuite name="com.testrunner.TestRunner" time="11.987">
+    <testsuite name="Feature: Login page of Application" time="11.987">
+      <testsuite name="Scenario: Login with valid credential" time="4.347">
+        <testcase name="Given Open the Chrome and launch the application" classname="Scenario: Login with valid credential" time="4.215"/>
+        <testcase name="When Enter the Username and Password" classname="Scenario: Login with valid credential" time="0.131"/>
+        <testcase name="Then login with the credential" classname="Scenario: Login with valid credential" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Login with invalid credential" time="0.005" incomplete="true">
+        <skipped/>
+        <testcase name="Given Open the Chrome and launch the application" classname="Scenario: Login with invalid credential" time="0.002"/>
+        <testcase name="When Enter the Username as a &quot;test&quot; and Password&#9;as a &quot;pass&quot;" classname="Scenario: Login with invalid credential" time="0.002" ignored="true"/>
+        <testcase name="Then login with the credential" classname="Scenario: Login with invalid credential" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

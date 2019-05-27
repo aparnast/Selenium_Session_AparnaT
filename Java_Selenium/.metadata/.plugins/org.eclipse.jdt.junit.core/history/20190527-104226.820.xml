@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="TestDemo" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.testrunner.TestRunner" time="0.571">
+    <testsuite name="Feature: Reset functionality on login page of Application" time="0.571">
+      <testsuite name="Scenario: Verification of Reset button" time="0.571">
+        <testcase name="Given Open the Chrome and launch the application" classname="Scenario: Verification of Reset button" time="0.425"/>
+        <testcase name="When Enter the Username and Password" classname="Scenario: Verification of Reset button" time="0.1"/>
+        <testcase name="Then Reset the credential" classname="Scenario: Verification of Reset button" time="0.046"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

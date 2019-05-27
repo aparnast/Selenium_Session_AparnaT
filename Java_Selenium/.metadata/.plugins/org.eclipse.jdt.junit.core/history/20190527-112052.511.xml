@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (1)" project="TestDemo" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.testrunner.TestRunner" time="4.415">
+    <testsuite name="Feature: Login page of Application" time="4.415">
+      <testsuite name="Scenario: Login with valid credential" time="4.415">
+        <testcase name="Given Open the Chrome and launch the application" classname="Scenario: Login with valid credential" time="4.3"/>
+        <testcase name="When Enter the Username and Password" classname="Scenario: Login with valid credential" time="0.057"/>
+        <testcase name="Then login with the credential" classname="Scenario: Login with valid credential" time="0.058"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,7 +1,15 @@
-Feature: Reset functionality on login page of Application 
+Feature: Login page of Application 
 
-Scenario: Verification of Reset button 
+Scenario: Login with valid credential  
 
 Given Open the Chrome and launch the application			
 When Enter the Username and Password			
-Then Reset the credential
+Then login with the credential
+
+Scenario: Login with invalid credential  
+
+Given Open the Chrome and launch the application			
+When Enter the Username as a " " and Password as a " " 		
+Then login with the credential
+
+     
