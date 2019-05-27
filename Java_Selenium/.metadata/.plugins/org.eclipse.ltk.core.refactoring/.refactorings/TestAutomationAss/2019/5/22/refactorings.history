@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestAutomationAss/src/test/resources/FeatureFiles/Login.feature&apos; to &apos;OpenUrl.feature&apos;" description="Rename resource &apos;Login.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/resources/FeatureFiles/Login.feature" name="OpenUrl.feature" stamp="1558955793310" updateReferences="true"/>
+</session>

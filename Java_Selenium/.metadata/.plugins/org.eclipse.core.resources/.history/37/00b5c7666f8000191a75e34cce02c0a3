@@ -1,0 +1,5 @@
+Feature: Open URL of Application
+
+Scenario: Check given URL is open or not 
+
+Given Open the Chrome and launch the application

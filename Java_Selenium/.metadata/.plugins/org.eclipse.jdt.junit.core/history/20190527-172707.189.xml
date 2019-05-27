@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunnerC" project="TestAutomationAss" tests="5" started="0" failures="0" errors="0" ignored="0">
+  <testsuite name="com.test.TestRunnerC" incomplete="true">
+    <testsuite name="Feature: Close the Browser" incomplete="true">
+      <testsuite name="Scenario: Check open window is close or or not" incomplete="true">
+        <testcase name="Given Close The Open Window" classname="Scenario: Check open window is close or or not" incomplete="true"/>
+        <testcase name="Then Show The Message On Console" classname="Scenario: Check open window is close or or not" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Open URL of Application" incomplete="true">
+      <testsuite name="Scenario: Check given URL is open or not" incomplete="true">
+        <testcase name="Given Open the Chrome and launch the application" classname="Scenario: Check given URL is open or not" incomplete="true"/>
+        <testcase name="When Click on login link" classname="Scenario: Check given URL is open or not" incomplete="true"/>
+        <testcase name="Then Given Url should be open" classname="Scenario: Check given URL is open or not" incomplete="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

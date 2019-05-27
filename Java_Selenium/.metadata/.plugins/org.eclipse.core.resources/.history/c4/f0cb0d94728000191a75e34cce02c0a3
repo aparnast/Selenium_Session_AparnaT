@@ -1,0 +1,6 @@
+Feature: Close the Browser
+
+Scenario: 
+
+Given Close The Open Window
+Then  Show The Message On Console 
