@@ -1,0 +1,14 @@
+Feature: Test Login fuctionality 
+
+
+  
+  Scenario Outline: User should login with valid  credentials 
+	Given I open login page 
+	When I enter user name as "<uname>" and password "<pass>" 
+	
+	And I submit login page 
+	Then I redirect to the home page 
+	
+	Examples: 
+		|uname|pass|
+		|admin @ gardenworld.com|GardenAdmin|

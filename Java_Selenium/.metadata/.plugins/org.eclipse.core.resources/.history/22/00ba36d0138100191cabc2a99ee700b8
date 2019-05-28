@@ -1,0 +1,9 @@
+Feature: Test Login fuctionality 
+
+Scenario: login with valid credentials
+  Given I am on the login page
+  When I fill in "Email" with "admin @ gardenworld.com"
+  And I fill in "Password" with "GardenAdmin"
+  And I press "Login"
+  Then I should be on the users home page
+  And I should see "Login successful"

@@ -1,0 +1,7 @@
+Feature: Close the Browser
+
+@RegressionTest
+Scenario: Check open window is close or or not 
+
+Given Close The Open Window
+Then  Show The Message On Console 

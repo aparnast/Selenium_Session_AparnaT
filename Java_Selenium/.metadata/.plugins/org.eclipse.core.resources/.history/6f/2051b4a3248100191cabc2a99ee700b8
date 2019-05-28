@@ -1,0 +1,21 @@
+Feature: Open URL of Application
+
+@RegressionTest
+Scenario: Check given URL is open or not 
+
+Given Open the Chrome and launch the application
+When Click on login link
+Then Given Url should be open 
+
+Scenario: login with valid credentials
+  Given I am on the login page
+  When I fill in username and password
+  And I press login
+  Then I should be on the users home page
+  And I should see "Login successful"
+
+Scenario: Check open window is close or or not 
+
+Given Close The Open Window
+Then  Show The Message On Console 
+

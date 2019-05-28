@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.testautomationass"/>
+			<item value="com.testautomation"/>
 			<item value="com.test.demo"/>
 			<item value="Demo1"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TestAutomationAss"/>
 			<item value="TestDemo"/>
 			<item value="com.demo1"/>
 		</list>
