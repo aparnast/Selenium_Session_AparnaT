@@ -19,23 +19,11 @@ public class demo {
 	       driver.get("https://www.idempiere.org/test-sites");	
 	       driver.findElement(By.className("dhtgD")).click();
 	    //   driver.switchTo().frame(0);
-	       WebElement username=driver.findElement(By.xpath("(//input[@class='z-textbox'])[1]"));
-	       Actions builder = new Actions(driver);
-			Action seriesOfActions = builder
-				.moveToElement(username)
-				.click()
-				.keyDown(username, Keys.SHIFT)
-				.sendKeys(username, "hello")
-				.keyUp(username, Keys.SHIFT)
-				.doubleClick(username)
-				.contextClick()
-				.build();
-				
-			seriesOfActions.perform() ;
-	    //	username.clear();	  
-	     //  username.sendKeys("admin @ gardenworld.com");
-		 //  driver.findElement(By.xpath("(//td[@class='login-field'])[2]")).sendKeys("GardenAdmin"); 
-			 
+	      
+	       driver.findElement(By.xpath("//input[@autocomplete='username']")).sendKeys("admin @ gardenworld.com");
+			driver.findElement(By.xpath("//input[@autocomplete='current-password']")).sendKeys("GardenAdmin");
+			driver.findElement(By.xpath("//button[text()=' OK']")).click();
+			
 	}
 
 }

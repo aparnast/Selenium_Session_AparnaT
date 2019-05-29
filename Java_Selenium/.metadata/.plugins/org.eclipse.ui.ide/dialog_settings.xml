@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\aparna.tahashildar\Downloads\Assigment\Assigment"/>
 			<item value="D:\GitBashSelenium\Java_Selenium\CucumberTutorial"/>
 			<item value="C:\Users\aparna.tahashildar\Desktop\CucumberTutorial"/>
 			<item value="D:\All_Workspace\JavaPrograms\CucumberTutorial"/>
