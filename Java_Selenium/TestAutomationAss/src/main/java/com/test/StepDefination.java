@@ -1,13 +1,8 @@
 package com.test;
-
-import static org.testng.Assert.assertEquals;
-
+import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,6 +10,7 @@ import cucumber.api.java.en.When;
 public class StepDefination {
 	public static WebDriver driver;
 	
+	//Check given URL is open or not
 	@Given("^Open the browser and launch the application$")
 	public void open_the_browser_and_launch_the_application() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
@@ -22,6 +18,17 @@ public class StepDefination {
 	       driver= new ChromeDriver();					
 	       driver.manage().window().maximize();			
 	       driver.get("https://www.idempiere.org/test-sites");	
+	       String actualTitle =driver.getTitle();
+			System.out.println(actualTitle);
+			String expectedTitle = "iDempiere = OSGi + ADempiere - Test Sites";
+			  if(actualTitle.equalsIgnoreCase(expectedTitle))
+			  {
+				  System.out.println("Title Matched");
+			  }
+		      else
+		      {
+				  System.out.println("Title didn't match");
+		      }
 	       System.out.println("run1");
 
 	}
@@ -36,8 +43,11 @@ public class StepDefination {
 	@Then("^Given Url should be open$")
 	public void given_Url_should_be_open() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+	    driver.switchTo().window(tabs2.get(1));
 		String actualTitle =driver.getTitle();
-		  String expectedTitle = "iDempiere = OSGi + ADempiere - Test Sites";
+		System.out.println(actualTitle);
+		  String expectedTitle = "*TEST* iDempiere";
 		  if(actualTitle.equalsIgnoreCase(expectedTitle))
 		  {
 			  System.out.println("Title Matched");
@@ -48,11 +58,12 @@ public class StepDefination {
 	      }
 		  System.out.println("run3");
 	}
-
+ //User should login with valid  credentials
 	@Given("^User is on login screen$")
 	public void user_is_on_login_screen() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    System.out.println("switch to login frame");
+	   /*
 	    WebElement helpbtn=driver.findElement(By.cssSelector("[type='button']"));
 	    helpbtn.click();
 	    
@@ -60,12 +71,15 @@ public class StepDefination {
 	    {
 	    	System.out.println("button is enabled");
 	    }
+	    */
 	    System.out.println("run4");
 	}
 
 	@When("^I enter user name and password$")
 	public void i_enter_user_name_and_password() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+	driver.findElement(By.xpath("(//input[@class='z-textbox'])[1]")).sendKeys("admin @ gardenworld.com");
+		driver.findElement(By.xpath("(//input[@class='z-textbox'])[2]")).sendKeys("GardenAdmin");
 		System.out.println("run5");
 	}
 
@@ -74,7 +88,7 @@ public class StepDefination {
 	    // Write code here that turns the phrase above into concrete actions
 		System.out.println("run6");
 	}
-
+//Check open window is close or or not 
 	@Then("^I redirect to the home page$")
 	public void i_redirect_to_the_home_page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions

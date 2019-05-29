@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunnerC" project="TestAutomationAss" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="com.test.TestRunnerC" time="0.675">
+    <testsuite name="Feature: Open URL of Application" time="0.675">
+      <testsuite name="Scenario: Check given URL is open or not" time="0.256">
+        <testcase name="Given Open the browser and launch the application" classname="Scenario: Check given URL is open or not" time="0.232"/>
+        <testcase name="When Click on login link" classname="Scenario: Check given URL is open or not" time="0.021"/>
+        <testcase name="Then Given Url should be open" classname="Scenario: Check given URL is open or not" time="0.003"/>
+      </testsuite>
+      <testsuite name="Scenario: User should login with valid  credentials" time="0.012">
+        <testcase name="Given User is on login screen" classname="Scenario: User should login with valid  credentials" time="0.003"/>
+        <testcase name="When I enter user name and password" classname="Scenario: User should login with valid  credentials" time="0.002"/>
+        <testcase name="And click on ok button" classname="Scenario: User should login with valid  credentials" time="0.006"/>
+        <testcase name="Then I redirect to the home page" classname="Scenario: User should login with valid  credentials" time="0.001"/>
+      </testsuite>
+      <testsuite name="Scenario: Check open window is close or or not" time="0.397">
+        <testcase name="Given Close The Open Window" classname="Scenario: Check open window is close or or not" time="0.005"/>
+        <testcase name="Then Show The Message On Console" classname="Scenario: Check open window is close or or not" time="0.392"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
