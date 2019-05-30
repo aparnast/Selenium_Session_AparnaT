@@ -1,0 +1,46 @@
+package demotemplet.Assigment;
+
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class TestingClass
+{
+	WebDriver driver;
+		public void Signin() throws InterruptedException
+		{
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\aparna.tahashildar\\Downloads\\Assigment\\Assigment\\Driver\\chromedriver.exe");
+			 	 WebDriver driver= new ChromeDriver();
+			  //   driver.get("https://www.idempiere.org/test-sites");	
+		             driver.get("https://test.idempiere.org/webui/");
+			  //   driver.findElement(By.xpath("(//a[@class='dhtgD'])[1]")).click();
+			 
+			  
+			   
+			    
+		         driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		
+			
+			     driver.findElement(By.xpath("//input[@autocomplete='username']")).sendKeys("admin @ gardenworld.com");
+		  		 driver.findElement(By.xpath("//input[@autocomplete='current-password']")).sendKeys("GardenAdmin");
+		  		 driver.findElement(By.xpath("//button[text()=' OK']")).click();
+			     Thread.sleep(2000);
+			     
+		  WebElement businesslink=driver.findElement(By.xpath("//a[@title='Maintain Business Partners']"));
+				  businesslink.click();
+				  Thread.sleep(2000);
+		  	   driver.findElement(By.xpath("(//*[@title='Cancel'])")).click();
+		  	 Thread.sleep(2000);
+		  	   businesslink.click();
+		  	 Thread.sleep(2000);
+		 
+		 }
+public static void main(String[] args) throws InterruptedException 
+{
+	TestingClass obj=new TestingClass();
+	obj.Signin();
+}
+}

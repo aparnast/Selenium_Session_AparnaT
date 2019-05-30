@@ -1,0 +1,52 @@
+package demotemplet.Assigment;
+
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class TestingClass
+{
+	WebDriver driver;
+		public void Signin() throws InterruptedException
+		{
+			
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\aparna.tahashildar\\Downloads\\Assigment\\Assigment\\Driver\\chromedriver.exe");
+			 	 WebDriver driver= new ChromeDriver();
+			 //	driver.get("https://www.idempiere.org/test-sites");	
+			 	
+		 driver.get(" https://test.idempiere.org/webui/");
+		         
+		 
+		         
+		 
+		         driver.findElement(By.xpath("//a[@target='_blank']")).click();
+		 
+		        
+		         
+		        
+			 	
+			driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
+		 
+		         
+		          driver.findElement(By.xpath("//input[@autocomplete='username']")).sendKeys("admin @ gardenworld.com");
+		  		driver.findElement(By.xpath("//input[@autocomplete='current-password']")).sendKeys("GardenAdmin");
+		  			driver.findElement(By.xpath("//button[text()=' OK']")).click();
+		  			
+		  			driver.close();
+		 
+		          }
+			 	
+			
+			
+		
+	
+
+public static void main(String[] args) throws InterruptedException 
+{
+	TestingClass obj=new TestingClass();
+	obj.Signin();
+}
+}
