@@ -78,11 +78,12 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_ve4rhnVlEemsOr_pyNV-MA" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_vex90HVlEemsOr_pyNV-MA"/>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_ve4riHVlEemsOr_pyNV-MA" containerData="8059" selectedElement="_ZEtywILSEemOD4HAuE4bEQ" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_ZEtywILSEemOD4HAuE4bEQ" containerData="8722" selectedElement="_ve4riXVlEemsOr_pyNV-MA">
-                <children xsi:type="advanced:Placeholder" xmi:id="_ve4riXVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.editorss" containerData="7520" ref="_vay1sHVlEemsOr_pyNV-MA"/>
-                <children xsi:type="basic:PartStack" xmi:id="_ve4rjXVlEemsOr_pyNV-MA" elementId="bottomRight" containerData="2480" selectedElement="_ve4rlXVlEemsOr_pyNV-MA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_ZEtywILSEemOD4HAuE4bEQ" containerData="8722" selectedElement="_ve4rjXVlEemsOr_pyNV-MA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_ve4riXVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.editorss" containerData="4928" ref="_vay1sHVlEemsOr_pyNV-MA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_ve4rjXVlEemsOr_pyNV-MA" elementId="bottomRight" containerData="5072" selectedElement="_ve4rlXVlEemsOr_pyNV-MA">
                   <tags>Java</tags>
                   <tags>Team</tags>
+                  <tags>active</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_ve4rjnVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.views.AllMarkersView" ref="_vex90XVlEemsOr_pyNV-MA"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_ve4rj3VlEemsOr_pyNV-MA" elementId="org.eclipse.ui.views.PropertySheet" ref="_veyk4HVlEemsOr_pyNV-MA"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_ve4rkHVlEemsOr_pyNV-MA" elementId="org.eclipse.wst.server.ui.ServersView" ref="_vezL8HVlEemsOr_pyNV-MA"/>
@@ -316,20 +317,17 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_vay1sHVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.editorss" selectedElement="_vay1sXVlEemsOr_pyNV-MA">
-      <children xsi:type="basic:PartStack" xmi:id="_vay1sXVlEemsOr_pyNV-MA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_d_taMIBuEemNZPxyTgmipA">
+      <children xsi:type="basic:PartStack" xmi:id="_vay1sXVlEemsOr_pyNV-MA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_g7kHUIBuEemNZPxyTgmipA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_d_taMIBuEemNZPxyTgmipA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="StepDefination.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;StepDefination.java&quot; partName=&quot;StepDefination.java&quot; title=&quot;StepDefination.java&quot; tooltip=&quot;TestAutomationAss/src/main/java/com/test/StepDefination.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TestAutomationAss/src/main/java/com/test/StepDefination.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5199&quot; selectionTopPixel=&quot;2040&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;StepDefination.java&quot; partName=&quot;StepDefination.java&quot; title=&quot;StepDefination.java&quot; tooltip=&quot;TestAutomationAss/src/main/java/com/test/StepDefination.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TestAutomationAss/src/main/java/com/test/StepDefination.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2972&quot; selectionTopPixel=&quot;1071&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_g7kHUIBuEemNZPxyTgmipA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="TestRunnerC.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestRunnerC.java&quot; partName=&quot;TestRunnerC.java&quot; title=&quot;TestRunnerC.java&quot; tooltip=&quot;TestAutomationAss/src/main/java/com/test/TestRunnerC.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TestAutomationAss/src/main/java/com/test/TestRunnerC.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;605&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestRunnerC.java&quot; partName=&quot;TestRunnerC.java&quot; title=&quot;TestRunnerC.java&quot; tooltip=&quot;TestAutomationAss/src/main/java/com/test/TestRunnerC.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/TestAutomationAss/src/main/java/com/test/TestRunnerC.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;603&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -426,7 +424,7 @@
       <tags>categoryTag:General</tags>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_ve0aEHVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Warnings (16 items)&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;664&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;664&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_E3TkAHb6EemZNupYMn7acg" elementId="org.eclipse.ui.views.ProblemView">
@@ -449,6 +447,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_LrlKwHVmEemsOr_pyNV-MA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -603,7 +603,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vEKeYHVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_So02kIKUEemOD4HAuE4bEQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_t_NBgnVlEemsOr_pyNV-MA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qtoH0IeAEemKyJQAUeBhsQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_t_NBgnVlEemsOr_pyNV-MA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vEKeYXVlEemsOr_pyNV-MA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -636,7 +636,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vELFcHVlEemsOr_pyNV-MA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_So4g8IKUEemOD4HAuE4bEQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_t_Maf3VlEemsOr_pyNV-MA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_qtrLIIeAEemKyJQAUeBhsQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_t_Maf3VlEemsOr_pyNV-MA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_vELFcXVlEemsOr_pyNV-MA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

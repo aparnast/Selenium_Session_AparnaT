@@ -1,5 +1,5 @@
 package com.test;
-import java.util.ArrayList;
+
 //import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeUnit;
 
@@ -28,21 +28,19 @@ public class StepDefination
 	 System.setProperty("webdriver.chrome.driver", "D:\\GitBashSelenium\\Java_Selenium\\TestAutomationAss\\Driver\\chromedriver.exe");
 	 driver= new ChromeDriver();					
 	 driver.manage().window().maximize();			
-	 /*driver.get("https://www.idempiere.org/test-sites");	
+/*	 driver.get("https://www.idempiere.org/test-sites");	
 	   String actualTitle =driver.getTitle();
 	   System.out.println(actualTitle);
 	   String expectedTitle = "iDempiere = OSGi + ADempiere - Test Sites";
 	   if(actualTitle.equalsIgnoreCase(expectedTitle))
 	   {
-		  System.out.println("Tab1-Title Matched");
+		  System.out.println("Run1"+"Tab1-Title Matched");
 	   }
 	   else
 	   {
-		  System.out.println("Tab1-Title didn't match");
-	   }
-	  */
-	  System.out.println("run1");
-	}
+		  System.out.println("Run1"+"Tab1-Title didn't match");
+	   }*/
+	 }
   @When("^Click on login link$")
   public void click_on_login_link() throws Throwable 
    {
@@ -58,14 +56,14 @@ public class StepDefination
      String expectedTitle = "*TEST* iDempiere";
      if(actualTitle.equalsIgnoreCase(expectedTitle))
 	 {
-	   System.out.println("Tab2-Title Matched");
+	   System.out.println("Run3"+"Tab2-Title Matched");
      }
 	 else
 	 {
-	   System.out.println("Tab2-Title didn't match");
+	   System.out.println("Run3"+"Tab2-Title didn't match");
 	 }
-	 System.out.println("run3");
-     //driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
+	
+     driver.manage().timeouts().implicitlyWait(20000, TimeUnit.MILLISECONDS);
 	}
 
   //User should login with valid  credentials
@@ -78,8 +76,10 @@ public class StepDefination
   @When("^I enter user name and password$") 
   public void i_enter_user_name_and_password() throws Throwable 
   {
-     driver.findElement(By.xpath("//input[@autocomplete='username']")).sendKeys("admin @ gardenworld.com");
-	 driver.findElement(By.xpath("//input[@autocomplete='current-password']")).sendKeys("GardenAdmin");
+     driver.findElement(By.xpath("//tr[@id='rowUser']//input")).sendKeys("admin @ gardenworld.com");
+     driver.findElement(By.xpath("//tr[@id='rowPassword']//input")).sendKeys("GardenAdmin");
+	//  driver.findElement(By.xpath("//input[@autocomplete='username']")).sendKeys("admin @ gardenworld.com");
+	// driver.findElement(By.xpath("//input[@autocomplete='current-password']")).sendKeys("GardenAdmin");
 	 System.out.println("run5");
   }
   @And("^click on ok button$")

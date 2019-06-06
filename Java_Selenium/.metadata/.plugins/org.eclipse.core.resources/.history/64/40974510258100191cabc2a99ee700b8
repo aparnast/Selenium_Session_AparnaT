@@ -1,8 +1,0 @@
-Feature: Test Login fuctionality 
-
-Scenario: login with valid credentials
-  Given I am on the login page
-  When I fill in username and password
-  And I press login
-  Then I should be on the users home page
-  And I should see "Login successful"

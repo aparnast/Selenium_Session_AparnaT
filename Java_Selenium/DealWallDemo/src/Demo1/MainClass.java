@@ -22,7 +22,7 @@ System.setProperty("webdriver.chrome.driver", "D:\\Session_Selenium\\All jars\\c
 		 Systemutil sys= new Systemutil();
 		 
 		 //use navigateto url method to open webpage 
-		 sys.navigateToURL("https://qaaws.a2omobile.com/dealwall/Client/index.html");
+		 sys.navigateToURL("");
 		 
 		 //enter values in login 
 	sys.enterText();
