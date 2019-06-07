@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner (2)" project="iDempiereCucumberFramework" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="iDempiereframework1.TestRunner" time="3.663">
+    <testsuite name="Feature: Login Action" time="3.663">
+      <testsuite name="Scenario: Successful Login with Valid Credentials" time="3.663">
+        <testcase name="Given User is on Home Page" classname="Scenario: Successful Login with Valid Credentials" time="3.208"/>
+        <testcase name="When User Navigate to LogIn Page" classname="Scenario: Successful Login with Valid Credentials" time="0.394"/>
+        <testcase name="And User enters UserName and Password" classname="Scenario: Successful Login with Valid Credentials" time="0.002"/>
+        <testcase name="Then Message displayed Login Successfully" classname="Scenario: Successful Login with Valid Credentials" time="0.059"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>
